@@ -1,0 +1,76 @@
+type: entities
+entities:
+  - type: custom:template-entity-row
+    entity: sensor.brother_mfc_j895dw_bk
+    name: Black Ink
+    style: |
+      :host {
+        --paper-item-icon-color: #000000;
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: #000000;
+          width: {{ states('sensor.brother_mfc_j895dw_bk') }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.brother_mfc_j895dw_c
+    name: Cyan Ink
+    style: |
+      :host {
+        --paper-item-icon-color: #00FFFF;
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: #00FFFF;
+          width: {{ states('sensor.brother_mfc_j895dw_c') }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.brother_mfc_j895dw_m
+    name: Magenta Ink
+    style: |
+      :host {
+        --paper-item-icon-color: #FF00FF;
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: #FF00FF;
+          width: {{ states('sensor.brother_mfc_j895dw_m') }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.brother_mfc_j895dw_y
+    name: Yellow Ink
+    style: |
+      :host {
+        --paper-item-icon-color: #FFFF00;
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: #FFFF00;
+          width: {{ states('sensor.brother_mfc_j895dw_y') }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+state_color: true
+title: Brother MFC-J895DW
