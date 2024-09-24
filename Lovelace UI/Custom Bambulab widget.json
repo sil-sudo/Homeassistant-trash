@@ -1,0 +1,80 @@
+type: entities
+entities:
+  - type: custom:template-entity-row
+    entity: sensor.bambu_ams_tray_1
+    name: Tray 1
+    style: |
+      :host {
+        --paper-item-icon-color: {{ state_attr('sensor.bambu_ams_tray_1', 'color') }};
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: {% if state_attr('sensor.bambu_ams_tray_1', 'color') == '#00000000' %} #FFFFFF11 {% else %} {{ state_attr('sensor.bambu_ams_tray_1', 'color') }} {% endif %};
+          width: {{ (state_attr('sensor.bambu_ams_tray_1', 'remain') / 100 * 100) }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.bambu_ams_tray_2
+    name: Tray 2
+    style: |
+      :host {
+        --paper-item-icon-color: {{ state_attr('sensor.bambu_ams_tray_2', 'color') }};
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: {% if state_attr('sensor.bambu_ams_tray_2', 'color') == '#00000000' %} #FFFFFF11 {% else %} {{ state_attr('sensor.bambu_ams_tray_2', 'color') }} {% endif %};
+          width: {{ (state_attr('sensor.bambu_ams_tray_2', 'remain') / 100 * 100) }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.bambu_ams_tray_3
+    name: Tray 3
+    style: |
+      :host {
+        --paper-item-icon-color: {{ state_attr('sensor.bambu_ams_tray_3', 'color') }};
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: {% if state_attr('sensor.bambu_ams_tray_3', 'color') == '#00000000' %} #FFFFFF11 {% else %} {{ state_attr('sensor.bambu_ams_tray_3', 'color') }} {% endif %};
+          width: {{ (state_attr('sensor.bambu_ams_tray_3', 'remain') / 100 * 100) }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - type: custom:template-entity-row
+    entity: sensor.bambu_ams_tray_4
+    name: Tray 4
+    style: |
+      :host {
+        --paper-item-icon-color: {{ state_attr('sensor.bambu_ams_tray_4', 'color') }};
+      }
+    card_mod:
+      style: |
+        .info::after {
+          content: '';
+          display: block;
+          background-color: {% if state_attr('sensor.bambu_ams_tray_4', 'color') == '#00000000' %} #FFFFFF11 {% else %} {{ state_attr('sensor.bambu_ams_tray_4', 'color') }} {% endif %};
+          width: {{ (state_attr('sensor.bambu_ams_tray_4', 'remain') / 100 * 100) }}%;
+          height: 10px;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+  - entity: sensor.bambu_ams_humidity_index
+    secondary_info: none
+  - entity: sensor.bambu_ext_external_spool
+show_header_toggle: false
+state_color: false
+title: Bambu AMS
