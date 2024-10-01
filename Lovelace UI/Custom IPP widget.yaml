@@ -1,3 +1,5 @@
+# requires Card mod from HACS
+# anytime the sensor.brother_mfc_x is mentioned, use your own Printer sensors
 type: entities
 entities:
   - type: custom:template-entity-row
