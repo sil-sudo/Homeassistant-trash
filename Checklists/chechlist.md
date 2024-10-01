@@ -44,3 +44,8 @@
     - Adopt ESP32
     - Update Nextion
     - Configure Blueprint
+
+11. Configure local Voice Commands using Rhass
+    - Add Rhass Repo to addon store https://github.com/rhasspy/hassio-addons
+    - Install Rhass 3 and German Voice assistant
+    - 
