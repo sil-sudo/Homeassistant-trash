@@ -1,3 +1,5 @@
+#Requires the Bambulab and card mods from HACS
+#you need to replace the entity: sensor.bambu_ams_tray_x with your own entities
 type: entities
 entities:
   - type: custom:template-entity-row
