@@ -1,5 +1,6 @@
 #This makes the whole button change color instead of just the symbol
 #This needs the standard button object, but requires the card-mod (HACS) to be installed to allow for CSS
+# replace #Entity with your entity
 type: button
 tap_action:
   action: toggle
@@ -9,7 +10,7 @@ show_icon: true
 card_mod:
   style: |
     ha-card {
-      background-color: {% if is_state('light.ecklampe_oben', 'on') %} lightyellow {% endif %};
-      color: {% if is_state('light.ecklampe_oben', 'on') %} black {% else %} white {% endif %};  # Text color adapts to background
+      background-color: {% if is_state('#Entity', 'on') %} lightyellow {% endif %};
+      color: {% if is_state('#Entity', 'on') %} black {% else %} white {% endif %};  # Text color adapts to background
       transition: background-color 0.3s ease, color 0.3s ease;  # Smooth transition for both background and text color
     }
