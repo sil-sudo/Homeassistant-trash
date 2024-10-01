@@ -1,3 +1,5 @@
+#This makes the whole button change color instead of just the symbol
+#This needs the standard button object, but requires the card-mod (HACS) to be installed to allow for CSS
 type: button
 tap_action:
   action: toggle
