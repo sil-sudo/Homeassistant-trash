@@ -1,0 +1,13 @@
+type: button
+tap_action:
+  action: toggle
+entity: #Entity
+show_name: true
+show_icon: true
+card_mod:
+  style: |
+    ha-card {
+      background-color: {% if is_state('light.ecklampe_oben', 'on') %} lightyellow {% endif %};
+      color: {% if is_state('light.ecklampe_oben', 'on') %} black {% else %} white {% endif %};  # Text color adapts to background
+      transition: background-color 0.3s ease, color 0.3s ease;  # Smooth transition for both background and text color
+    }
