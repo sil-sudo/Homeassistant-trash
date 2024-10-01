@@ -35,6 +35,7 @@
     - Home Assistant Swipe
     - Stack in Card
     - template entity row
+    - https://github.com/kalkih/mini-media-player
       
 9. Configure and adopt devices
 
