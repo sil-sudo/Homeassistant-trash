@@ -13,11 +13,11 @@
     - File Editor
     - Terminal
     - music assistant (custom repo)
-7. Install and configure cloudflared (custom repositories)
-    - Enable External Access
-    - Set 127.0.0.1 as trusted proxy
+7. Install and configure cloudflared (custom repositories) https://github.com/brenner-tobias/addon-cloudflared
+    - In user settings enable advanced mode
+    - Enable External Access and set external URL
+    - Set 172.30.x.x as trusted proxy
     - Enter API key in addon
-    - Enter Home Assistant URL in settings
     - Disable ipv6
 8. Install HACS Plugins
     - iOS Themes - Dark Mode and light mode
@@ -29,5 +29,9 @@
     - Stack in Card
     - template entity row
 9. Configure and adopt devices
-10. Configure ESPhome and flash NSPanel$
-    - use blueprint https://github.com/Blackymas/NSPanel_HA_Blueprint?tab=readme-ov-file#-documentation--resources
+10. Configure ESPhome and flash NSPanel https://github.com/Blackymas/NSPanel_HA_Blueprint?tab=readme-ov-file#-documentation--resources
+    - Use Documentation to compile ESP32 Image (use only lowercase for name)
+    - Flash ESP32 Image to NSpanel
+    - Adopt ESP32
+    - Update Nextion
+    - Configure Blueprint
